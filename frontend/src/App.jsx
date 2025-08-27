@@ -10,7 +10,6 @@ import Signup from './pages/Signup/Signup'
 import ViewPost from './pages/ViewPost/ViewPost'
 import Navbar from './components/Navbar/Navbar'
 import Dashboard from './pages/Dashboard/Dashboard'
-import Comments from './pages/Comments/Comments'
 import FooterComp from './components/FooterComp/FooterComp'
 
 const App = () => {
@@ -26,7 +25,6 @@ const App = () => {
       <Route path='/posts/:id' element={ <ViewPost /> } />
       <Route path='/edit/:id' element={ <EditPost /> } />
       <Route path='/myPosts' element={ <MyPosts /> } />
-      <Route path='/comments' element={ <Comments />} />
       <Route path='/login' element={ <Login /> } />
       <Route path='/signup' element={ <Signup /> } />
     </Routes>

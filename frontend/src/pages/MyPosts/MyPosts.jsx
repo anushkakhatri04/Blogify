@@ -15,7 +15,7 @@ const MyPosts = () => {
            console.log("No user or token in localStorage");
         return;
       }
-        const res = await axios.get("http://localhost:8080/api/posts/myposts", {
+        const res = await axios.get("https://blogify-backend-wz2i.onrender.com/api/posts/myposts", {
           headers: { Authorization: `Bearer ${ user.token || user.accessToken } ` },
         });
         console.log("Fetched posts:", res.data);

@@ -34,7 +34,7 @@ const AddPost = () => {
       formData.append("category", category);
       if(thumbnail) formData.append("image", thumbnail);
 
-      await axios.post("http://localhost:8080/api/posts", formData, {
+      await axios.post("https://blogify-backend-wz2i.onrender.com/api/posts", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${user.token}`,

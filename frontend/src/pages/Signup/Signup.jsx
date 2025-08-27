@@ -17,7 +17,7 @@ const Signup = () => {
     setError("")
 
     try {
-      const res = await axios.post("http://localhost:8080/api/users/register", {
+      const res = await axios.post("https://blogify-backend-wz2i.onrender.com/api/users/register", {
         username,
         email,
         password

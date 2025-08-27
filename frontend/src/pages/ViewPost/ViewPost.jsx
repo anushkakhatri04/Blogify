@@ -15,7 +15,7 @@ const ViewPost = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await axios.get(`http://localhost:8080/api/posts/${id}`);
+        const res = await axios.get(`https://blogify-backend-wz2i.onrender.com/api/posts/${id}`);
         setPost(res.data.post);
       } catch(err) {
         console.error("Error fetching post:", err.response?.data || err.message);
@@ -26,7 +26,7 @@ const ViewPost = () => {
 
      const fetchComments = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/api/comments/${id}`);
+      const res = await axios.get(`https://blogify-backend-wz2i.onrender.com/api/comments/${id}`);
       setComments(res.data);
     } catch(err) {
       console.error("Error fetching comments:", err.response?.data || err.message);
@@ -42,7 +42,7 @@ const ViewPost = () => {
 
     try {
       const user = JSON.parse(localStorage.getItem("user"));
-      await axios.delete(`http://localhost:8080/api/posts/${id}`, {
+      await axios.delete(`https://blogify-backend-wz2i.onrender.com/api/posts/${id}`, {
         headers: { Authorization: `Bearer ${user.token}` },
       });
       navigate("/myposts");
@@ -53,7 +53,7 @@ const ViewPost = () => {
     e.preventDefault ();
     try {
       const user = JSON.parse(localStorage.getItem("user"));
-      const res = await axios.post(`http://localhost:8080/api/comments/${id}`, 
+      const res = await axios.post(`https://blogify-backend-wz2i.onrender.com/api/comments/${id}`, 
         { content: newComment },
         { headers: {Authorization: `Bearer ${user.token}`}}
       );
@@ -74,7 +74,7 @@ const ViewPost = () => {
       <h1>{post.title}</h1>
        <p><strong>Category:</strong> {post.category}</p>
         <p>{post.content}</p>
-         {post.image && <img src={`http://localhost:8080${post.image}`} alt={post.title} />}
+         {post.image && <img src={`https://blogify-backend-wz2i.onrender.com${post.image}`} alt={post.title} />}
          {/* Show Edit/Delete only if logged-in user is the author */}
       {user && post.author && user._id === post.author._id && (
         <div className="actions">

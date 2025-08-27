@@ -77,7 +77,7 @@ const EditPost = () => {
 
       //put request for updating/editing
 
-      await axios.put(`http://localhost:8080/api/posts/${id}`, formData, {
+      await axios.put(`https://blogify-backend-wz2i.onrender.com/api/posts/${id}`, formData, {
       headers: {
         "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${user.token}`,

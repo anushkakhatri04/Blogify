@@ -16,7 +16,7 @@ const Login = () => {
     setError("");
 
     try {
-      const res = await axios.post("http://localhost:8080/api/users/login", { email, password });
+      const res = await axios.post("https://blogify-backend-wz2i.onrender.com/api/users/login", { email, password });
 
       //save token and user info
       localStorage.setItem("user", JSON.stringify({...res.data.user, token: res.data.token}));
