@@ -12,7 +12,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/api/posts")
+        const res = await axios.get("https://blogify-backend-wz2i.onrender.com/api/posts")
         setPosts(res.data)
       } catch (error) {
         console.error(error)
@@ -71,7 +71,7 @@ const Home = () => {
 
                 <Link to={`/posts/${post._id}`}>
                 <img
-                src={post.image ? `http://localhost:8080${post.image}` : "/default-placeholder.png" } 
+                src={post.image ? `https://blogify-backend-wz2i.onrender.com${post.image}` : "/default-placeholder.png" } 
                 alt={post.title} 
                 className="post-image" 
                 />
