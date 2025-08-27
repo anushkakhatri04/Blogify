@@ -19,11 +19,13 @@ router.put("/:id", protect, upload.single("image"), updatePost);
 router.delete("/:id", protect, deletePost);
 
 
+// Get all posts
+router.get("/", getPosts);
+
+
 // View single post
 router.get("/:id", getPostById);
 
-// Get all posts
-router.get("/", getPosts);
 
 
 export default router;

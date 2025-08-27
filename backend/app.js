@@ -35,7 +35,7 @@ const frontendPath = join(__dirname, "frontend", "build");
 app.use(express.static(frontendPath));
 
 // Any unknown route -> send React index.html
-app.get("*", (req, res) => {
+app.get(/^(?!\/api).*/, (req, res) => {
   res.sendFile(join(frontendPath, "index.html"));
 });
 // --------------------------------------------------------- //
