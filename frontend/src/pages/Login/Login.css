@@ -1,0 +1,87 @@
+* {
+    font-family: "Nata Sans", sans-serif;
+    font-weight: 500;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #f5f5f5;
+}
+
+.login-card {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.login-card .login-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bolder;
+}
+
+.login-card .login-heading .h2-dashboard {
+    color: #4daaf0;
+}
+
+.login-card p {
+    color: #1a1e23;
+    font-size: 15px;
+}
+
+.login-card form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login-card label {
+    text-align: left;
+    color: #444b54;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 0.8rem;
+    /* margin: 10px 0;  */
+    border: none;
+    border-bottom: 1px solid #444b54;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.login-card button {
+    padding: 0.8rem;
+    background-color: #4daaf0;
+    width: 18rem;
+    border: none;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-card p {
+    color: #444b54;
+}
+
+
+.login-card p link {
+    color: #2f8cd4;
+}
+
+.login-card p link:hover {
+    color: #71c2ff;
+}

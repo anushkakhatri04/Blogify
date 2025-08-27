@@ -1,0 +1,81 @@
+.myposts-container {
+    width: 100%;
+}
+
+.stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    color: #00589b;
+    font-size: 24px;
+    margin-bottom: 0.3rem;
+}
+
+.stat-card p {
+    color: #333;
+    font-size: 14px;
+}
+
+.blogs-table  {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.blogs-table h2 {
+    margin-bottom: 1rem;
+    color: #000589b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #926cee;
+    color: #00589b;
+}
+
+th, td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.published {
+  color: green;
+  font-weight: bold;
+}
+
+.btn {
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.unpublish {
+  background: #92c6ee;
+  color: #00589b;
+}
+
+
+.delete {
+  background: #ff4d4d;
+  color: white;
+}

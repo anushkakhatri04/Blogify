@@ -1,0 +1,140 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background: #f5f9ff;
+    font-family: "Nata Sans", sans-serif;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #00589b;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.sidebar .logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 0.4rem 0;
+    cursor: pointer;
+    border-radius: 6px;
+    padding-left: 10px;
+    transition: 0.3s;
+}
+
+.sidebar a {
+  color: inherit;          /* makes links white like the sidebar */
+  text-decoration: none;
+}
+
+.sidebar li:hover {
+  background: #92c6ee;
+  color: #00589b;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.stats {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+     color: #00589b;
+  font-size: 24px;
+  margin-bottom: 0.3rem;
+}
+
+.stat-card p {
+  color: #333;
+  font-size: 14px;
+}
+
+.blogs-table {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.blogs-table a {
+  color: #00589b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.blogs-table a:hover {
+  color: #003f73;         
+  text-decoration: underline; 
+}
+
+.blogs-table h2 {
+  margin-bottom: 1rem;
+  color: #00589b;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #92c6ee;
+  color: #00589b;
+}
+
+th, td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.status {
+  font-weight: bold;
+  color: green;
+}
+
+
+
+.btn {
+  padding: 0.3rem 0.8rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete {
+  background: #ff4d4d;
+  color: white;
+}
