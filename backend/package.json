@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "debug-express": "cat node_modules/express/lib/application.js | head -n 30"
   },
   "type": "module",
   "keywords": [],
